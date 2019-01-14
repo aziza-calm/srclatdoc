@@ -1,0 +1,106 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{extsizes}% Using font size
+\usepackage[T2A]{fontenc}
+\usepackage[utf8x]{inputenc} % supporting UTF8
+\usepackage[russian,english]{babel}  % supporting Russian
+\usepackage{listings}
+\usepackage{graphicx} % for pictures
+\usepackage{caption}% picture structure
+\usepackage{subcaption}% picture structure
+\usepackage{mmap}
+\usepackage{booktabs}
+\usepackage{indentfirst}% indent at the beginning of each paragraph
+\usepackage{amsmath}
+\usepackage[numbers,sort&compress]{natbib}% Nice citations [1,2,3,4] -> [1-4]
+\DeclareMathOperator*\erf{erf}
+\DeclareMathOperator*\erfc{erfc}
+\DeclareMathOperator*\FT{FT}
+\DeclareMathOperator*\IFT{IFT}
+\DeclareMathOperator*\Col{Col}
+\DeclareMathOperator*\Ew{Ew}
+\DeclareMathOperator*\PME{PME}
+\usepackage{float}
+\restylefloat{table}
+\usepackage{amssymb,amsmath,amsfonts,latexsym,mathtext,amsthm}% Мат. плюшки
+\usepackage{multirow} % улучшенное форматирование таблиц
+\usepackage{float}% Иначе картинки не работают
+\usepackage[left=3cm,right=1.5cm,top=2.4cm,bottom=2.4cm]{geometry}% Рамки
+\numberwithin{equation}{section}% Модная нумерация уравнений
+\usepackage[onehalfspacing]{setspace}% Provides support for setting the spacing between lines in a document. Package options include singlespacing, onehalfspacing, and doublespacing.
+\sloppy% по ширине..., иначе текст выходит за рамки
+\addto\captionsenglish{
+  \renewcommand{\contentsname}
+    {Оглавление}
+}
+
+\addto\captionsenglish{
+  \renewcommand{\figurename}
+    {Рис.}
+}
+\addto\captionsenglish{
+  \renewcommand{\tablename}
+    {Табл.}
+}
+\addto\captionsenglish{
+  \renewcommand{\lstlistingname}
+    {Листинг}
+}
+\begin{document}
+
+\begin{titlepage}
+	\centering
+	{Министерство образования и науки Российской Федерации\\
+	Московский физико-технический институт (государственный университет)
+	\\Факультет Аэрофизики и Космических Исследований
+	\\Кафедра Информатики и Вычислительной Математики\par}
+	\vspace{4 cm}
+	{\scshape\LargeВыпускная квалификационная работа \par}
+	\vspace{2 cm}
+	{\scshape\Large***Название дипломной работы***\par}
+	\vfill
+	\raggedleft
+	{Выполнила:\\
+	студентка 53* группы\\
+	\itshape Калмасова Азиза Онталаповна\par}
+	{Научный руководитель:\\
+	ассистент\\
+	\itshape Казеннов Андрей Максимович\par}
+	\vfill
+	\centering
+	{\large Москва\\
+	2019\par}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+\section{Введение}
+
+***Тут будет введение ***
+
+\newpage
+\section{Новый заголовок}
+
+*** Здесь будет еще какой-то текст ***
+
+\subsection{Какой-то подпункт}
+
+*** Текст какого-то подпункта ***
+
+\subsubsection{Какой-то подпункт какого-то подпункта}
+
+*** Текст какого-то подпункта какого-то подпункта ***
+
+\newpage
+\section{Реализация}
+
+\section{Заключение}
+
+\newpage
+\bibliographystyle{gost780u}
+\renewcommand{\refname}{Список литературы}
+\addcontentsline{toc}{section}{Список литературы}
+\begin{thebibliography}{99}
+
+
+\end{thebibliography}
+\end{document}
