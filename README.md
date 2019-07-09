@@ -1,3 +1,3 @@
 # srclatdoc
 
-This is Latex code of my bachelor diploma.
+This is Latex code of my diploma (bachelor).
